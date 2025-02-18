@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+		<meta charset="UTF-8" />
+		<meta name="theme-color" content="#f02b2b" />
+		<link rel="canonical" href="index.html"/>
+		<meta name='revisit-after' content='2 days' />
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">	
+		<meta name="robots" content="noodp,index,follow" />
+		<meta name="description" content="">
+		<title>333Beer Restaurant</title>
+		<meta name="keywords" content=""/>		
+		
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="333Beer Restaurant">
+	<meta property="og:image" content="data/100/469/097/themes/882205/assets/logo333.png">
+	<meta property="og:image:secure_url" content="data/100/469/097/themes/882205/assets/logo333.png">
+
+<meta property="og:description" content="">
+<meta property="og:url" content="index.html">
+<meta property="og:site_name" content="333Beer Restaurant">	
+		<link rel="icon" href="data/100/469/097/themes/882205/assets/favicon333.png" type="image/x-icon" />
+		<link rel="preload" as="script" href="data/100/469/097/themes/882205/assets/jquerybce7.js" />
+		<script src="data/100/469/097/themes/882205/assets/jquerybce7.js" type="text/javascript"></script>
+		
+		<link rel="preload" as="script" href="data/100/469/097/themes/882205/assets/swiperbce7.js" />
+		<script src="data/100/469/097/themes/882205/assets/swiperbce7.js" type="text/javascript"></script>
+		
+		<link rel="preload" as="script" href="data/100/469/097/themes/882205/assets/lazybce7.js" />
+		<script src="data/100/469/097/themes/882205/assets/lazybce7.js" type="text/javascript"></script>
+		<script src="data/100/469/097/themes/882205/assets/waypointsbce7.js" type="text/javascript"></script>
+		<script src="data/100/469/097/themes/882205/assets/counterupbce7.js" type="text/javascript"></script>
+		<script>
+//notify js
+!function(t){"function"==typeof define&&define.amd?define(["jquery"],t):t("object"==typeof exports?require("jquery"):jQuery)}(function(t){function s(s){var e=!1;return t('[data-notify="container"]').each(function(i,n){var a=t(n),o=a.find('[data-notify="title"]').text().trim(),r=a.find('[data-notify="message"]').html().trim(),l=o===t("<div>"+s.settings.content.title+"</div>").html().trim(),d=r===t("<div>"+s.settings.content.message+"</div>").html().trim(),g=a.hasClass("alert-"+s.settings.type);return l&&d&&g&&(e=!0),!e}),e}function e(e,n,a){var o={content:{message:"object"==typeof n?n.message:n,title:n.title?n.title:"",icon:n.icon?n.icon:"",url:n.url?n.url:"#",target:n.target?n.target:"-"}};a=t.extend(!0,{},o,a),this.settings=t.extend(!0,{},i,a),this._defaults=i,"-"===this.settings.content.target&&(this.settings.content.target=this.settings.url_target),this.animations={start:"webkitAnimationStart oanimationstart MSAnimationStart animationstart",end:"webkitAnimationEnd oanimationend MSAnimationEnd animationend"},"number"==typeof this.settings.offset&&(this.settings.offset={x:this.settings.offset,y:this.settings.offset}),(this.settings.allow_duplicates||!this.settings.allow_duplicates&&!s(this))&&this.init()}var i={element:"body",position:null,type:"info",allow_dismiss:!0,allow_duplicates:!0,newest_on_top:!1,showProgressbar:!1,placement:{from:"top",align:"right"},offset:20,spacing:10,z_index:1031,delay:5e3,timer:1e3,url_target:"_blank",mouse_over:null,animate:{enter:"animated fadeInDown",exit:"animated fadeOutUp"},onShow:null,onShown:null,onClose:null,onClosed:null,icon_type:"class",template:'<div data-notify="container" class="col-xs-11 col-sm-4 alert alert-{0}" role="alert"><button type="button" aria-hidden="true" class="close" data-notify="dismiss">&times;</button><span data-notify="icon"></span> <span data-notify="title">{1}</span> <span data-notify="message">{2}</span><div class="progress" data-notify="progressbar"><div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div></div><a href="{3}" target="{4}" data-notify="url"></a></div>'};String.format=function(){for(var t=arguments[0],s=1;s<arguments.length;s++)t=t.replace(RegExp("\\{"+(s-1)+"\\}","gm"),arguments[s]);return t},t.extend(e.prototype,{init:function(){var t=this;this.buildNotify(),this.settings.content.icon&&this.setIcon(),"#"!=this.settings.content.url&&this.styleURL(),this.styleDismiss(),this.placement(),this.bind(),this.notify={$ele:this.$ele,update:function(s,e){var i={};"string"==typeof s?i[s]=e:i=s;for(var n in i)switch(n){case"type":this.$ele.removeClass("alert-"+t.settings.type),this.$ele.find('[data-notify="progressbar"] > .progress-bar').removeClass("progress-bar-"+t.settings.type),t.settings.type=i[n],this.$ele.addClass("alert-"+i[n]).find('[data-notify="progressbar"] > .progress-bar').addClass("progress-bar-"+i[n]);break;case"icon":var a=this.$ele.find('[data-notify="icon"]');"class"===t.settings.icon_type.toLowerCase()?a.removeClass(t.settings.content.icon).addClass(i[n]):(a.is("img")||a.find("img"),a.attr("src",i[n]));break;case"progress":var o=t.settings.delay-t.settings.delay*(i[n]/100);this.$ele.data("notify-delay",o),this.$ele.find('[data-notify="progressbar"] > div').attr("aria-valuenow",i[n]).css("width",i[n]+"%");break;case"url":this.$ele.find('[data-notify="url"]').attr("href",i[n]);break;case"target":this.$ele.find('[data-notify="url"]').attr("target",i[n]);break;default:this.$ele.find('[data-notify="'+n+'"]').html(i[n])}var r=this.$ele.outerHeight()+parseInt(t.settings.spacing)+parseInt(t.settings.offset.y);t.reposition(r)},close:function(){t.close()}}},buildNotify:function(){var s=this.settings.content;this.$ele=t(String.format(this.settings.template,this.settings.type,s.title,s.message,s.url,s.target)),this.$ele.attr("data-notify-position",this.settings.placement.from+"-"+this.settings.placement.align),this.settings.allow_dismiss||this.$ele.find('[data-notify="dismiss"]').css("display","none"),(this.settings.delay>0||this.settings.showProgressbar)&&this.settings.showProgressbar||this.$ele.find('[data-notify="progressbar"]').remove()},setIcon:function(){"class"===this.settings.icon_type.toLowerCase()?this.$ele.find('[data-notify="icon"]').addClass(this.settings.content.icon):this.$ele.find('[data-notify="icon"]').is("img")?this.$ele.find('[data-notify="icon"]').attr("src",this.settings.content.icon):this.$ele.find('[data-notify="icon"]').append('<img src="'+this.settings.content.icon+'" alt="Notify Icon" />')},styleDismiss:function(){this.$ele.find('[data-notify="dismiss"]').css({position:"absolute",right:"10px",top:"5px",zIndex:this.settings.z_index+2})},styleURL:function(){this.$ele.find('[data-notify="url"]').css({backgroundImage:"url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)",height:"100%",left:0,position:"absolute",top:0,width:"100%",zIndex:this.settings.z_index+1})},placement:function(){var s=this,e=this.settings.offset.y,i={display:"inline-block",margin:"0px auto",position:this.settings.position?this.settings.position:"body"===this.settings.element?"fixed":"absolute",transition:"all .5s ease-in-out",zIndex:this.settings.z_index},n=!1,a=this.settings;switch(t('[data-notify-position="'+this.settings.placement.from+"-"+this.settings.placement.align+'"]:not([data-closing="true"])').each(function(){e=Math.max(e,parseInt(t(this).css(a.placement.from))+parseInt(t(this).outerHeight())+parseInt(a.spacing))}),this.settings.newest_on_top===!0&&(e=this.settings.offset.y),i[this.settings.placement.from]=e+"px",this.settings.placement.align){case"left":case"right":i[this.settings.placement.align]=this.settings.offset.x+"px";break;case"center":i.left=0,i.right=0}this.$ele.css(i).addClass(this.settings.animate.enter),t.each(["webkit-","moz-","o-","ms-",""],function(t,e){s.$ele[0].style[e+"AnimationIterationCount"]=1}),t(this.settings.element).append(this.$ele),this.settings.newest_on_top===!0&&(e=parseInt(e)+parseInt(this.settings.spacing)+this.$ele.outerHeight(),this.reposition(e)),t.isFunction(s.settings.onShow)&&s.settings.onShow.call(this.$ele),this.$ele.one(this.animations.start,function(){n=!0}).one(this.animations.end,function(){t.isFunction(s.settings.onShown)&&s.settings.onShown.call(this)}),setTimeout(function(){n||t.isFunction(s.settings.onShown)&&s.settings.onShown.call(this)},600)},bind:function(){var s=this;if(this.$ele.find('[data-notify="dismiss"]').on("click",function(){s.close()}),this.$ele.mouseover(function(){t(this).data("data-hover","true")}).mouseout(function(){t(this).data("data-hover","false")}),this.$ele.data("data-hover","false"),this.settings.delay>0){s.$ele.data("notify-delay",s.settings.delay);var e=setInterval(function(){var t=parseInt(s.$ele.data("notify-delay"))-s.settings.timer;if("false"===s.$ele.data("data-hover")&&"pause"===s.settings.mouse_over||"pause"!=s.settings.mouse_over){var i=(s.settings.delay-t)/s.settings.delay*100;s.$ele.data("notify-delay",t),s.$ele.find('[data-notify="progressbar"] > div').attr("aria-valuenow",i).css("width",i+"%")}t>-s.settings.timer||(clearInterval(e),s.close())},s.settings.timer)}},close:function(){var s=this,e=parseInt(this.$ele.css(this.settings.placement.from)),i=!1;this.$ele.data("closing","true").addClass(this.settings.animate.exit),s.reposition(e),t.isFunction(s.settings.onClose)&&s.settings.onClose.call(this.$ele),this.$ele.one(this.animations.start,function(){i=!0}).one(this.animations.end,function(){t(this).remove(),t.isFunction(s.settings.onClosed)&&s.settings.onClosed.call(this)}),setTimeout(function(){i||(s.$ele.remove(),s.settings.onClosed&&s.settings.onClosed(s.$ele))},600)},reposition:function(s){var e=this,i='[data-notify-position="'+this.settings.placement.from+"-"+this.settings.placement.align+'"]:not([data-closing="true"])',n=this.$ele.nextAll(i);this.settings.newest_on_top===!0&&(n=this.$ele.prevAll(i)),n.each(function(){t(this).css(e.settings.placement.from,s),s=parseInt(s)+parseInt(e.settings.spacing)+t(this).outerHeight()})}}),t.notify=function(t,s){var i=new e(this,t,s);return i.notify},t.notifyDefaults=function(s){return i=t.extend(!0,{},i,s)},t.notifyClose=function(s){void 0===s||"all"===s?t("[data-notify]").find('[data-notify="dismiss"]').trigger("click"):t('[data-notify-position="'+s+'"]').find('[data-notify="dismiss"]').trigger("click")}});
+//cookie
+!function(e){var n;if("function"==typeof define&&define.amd&&(define(e),n=!0),"object"==typeof exports&&(module.exports=e(),n=!0),!n){var t=window.Cookies,o=window.Cookies=e();o.noConflict=function(){return window.Cookies=t,o}}}(function(){function e(){for(var e=0,n={};e<arguments.length;e++){var t=arguments[e];for(var o in t)n[o]=t[o]}return n}function n(e){return e.replace(/(%[0-9A-Z]{2})+/g,decodeURIComponent)}return function t(o){function r(){}function i(n,t,i){if("undefined"!=typeof document){"number"==typeof(i=e({path:"/"},r.defaults,i)).expires&&(i.expires=new Date(1*new Date+864e5*i.expires)),i.expires=i.expires?i.expires.toUTCString():"";try{var c=JSON.stringify(t);/^[\{\[]/.test(c)&&(t=c)}catch(e){}t=o.write?o.write(t,n):encodeURIComponent(String(t)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),n=encodeURIComponent(String(n)).replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent).replace(/[\(\)]/g,escape);var f="";for(var u in i)i[u]&&(f+="; "+u,!0!==i[u]&&(f+="="+i[u].split(";")[0]));return document.cookie=n+"="+t+f}}function c(e,t){if("undefined"!=typeof document){for(var r={},i=document.cookie?document.cookie.split("; "):[],c=0;c<i.length;c++){var f=i[c].split("="),u=f.slice(1).join("=");t||'"'!==u.charAt(0)||(u=u.slice(1,-1));try{var a=n(f[0]);if(u=(o.read||o)(u,a)||n(u),t)try{u=JSON.parse(u)}catch(e){}if(r[a]=u,e===a)break}catch(e){}}return e?r[e]:r}}return r.set=i,r.get=function(e){return c(e,!1)},r.getJSON=function(e){return c(e,!0)},r.remove=function(n,t){i(n,"",e(t,{expires:-1}))},r.defaults={},r.withConverter=t,r}(function(){})});
+
+</script>
+		<link rel="preload" as='style' type="text/css" href="data/100/469/097/themes/882205/assets/main.scssbce7.css">
+<link rel="preload" as='style'  type="text/css" href="data/100/469/097/themes/882205/assets/bootstrap-4-3-minbce7.css">
+<link href="data/100/469/097/themes/882205/assets/bootstrap-4-3-minbce7.css" rel="stylesheet" type="text/css" media="all" />
+<link href="data/100/469/097/themes/882205/assets/main.scssbce7.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="data/100/469/097/themes/882205/assets/swiper.scssbce7.css" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="preload" as='style'  type="text/css" href="data/100/469/097/themes/882205/assets/index.scssbce7.css">
+<link href="data/100/469/097/themes/882205/assets/index.scssbce7.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="data/100/469/097/themes/882205/assets/quickviews_popup_cart.scssbce7.css" rel="stylesheet" type="text/css" media="all" />
+
+<script>
+	(function () {
+		function asyncLoad() {
+			var urls = [];
+			for (var i = 0; i < urls.length; i++) {
+				var s = document.createElement('script');
+				s.type = 'text/javascript';
+				s.async = true;
+				s.src = urls[i];
+				var x = document.getElementsByTagName('script')[0];
+				x.parentNode.insertBefore(s, x);
+			}
+		};
+		window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
+	})();
+</script>
+
+		
+		<script>
+			$(document).ready(function ($) {
+				awe_lazyloadImage();
+			});
+			function awe_lazyloadImage() {
+				var ll = new LazyLoad({
+					elements_selector: ".lazyload",
+					load_delay: 100,
+					threshold: 0
+				});
+			} window.awe_lazyloadImage=awe_lazyloadImage;
+		</script>
+	</head>
+	<body>
+		<div class="opacity_menu"></div>
+<header class="header header-index">
+	<div class="container">
+		<div class="bottom-header">
+			<div class="row justify-content-center">
+			<div class="col-2"></div>
+				<div class="col-2">
+					<div class="logo">
+						<a href="index.html" title="Logo">	
+							<img width="100%" height="auto" src="data/100/469/097/themes/882205/assets/logo333.png" alt="333Beer Restaurant">
+						</a>
+					</div>
+				</div>
+				<div class="col-8">
+					<address>
+					<strong>〒733-0011</strong><br> Hiroshima ,Nishi Ward, Yokogawacho, 2 Chome−2−21 小谷ビル 101 <br>
+					広島県広島市西区横川町2丁目2ー21　小谷ビル１０１
+					</address>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<div class="bodywrap">
+			<h1 class="d-none">333Beer Restaurant</h1>
+
+<section class="section_slider">
+	<div class="home-slider swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide animate__bounceIn">
+				<a class="clearfix" title="Slider 1">
+					<picture>
+						<source 
+								media="(min-width: 1200px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_1.jpg">
+						<source 
+								media="(min-width: 992px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_1.jpg">
+						<source 
+								media="(min-width: 569px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_mb_1.jpg">
+						<source 
+								media="(max-width: 567px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_mb_1.jpg">
+						<img width="1920" height="930" src="data/thumb/grande/100/469/097/themes/882205/assets/slider_1.jpg" alt="Slider 1" class="img-responsive" />
+					</picture>
+				</a>
+				<div class="content-slider">
+					<span class="title">&nbsp</span>
+					<span class="title">333Beer Restaurant</span>
+					<span class="content">Món ăn đa dạng</span>
+				</div>
+			</div>
+			<div class="swiper-slide animate__bounceIn">
+				<a class="clearfix" title="Slider 2">
+					<picture>
+						<source 
+								media="(min-width: 1200px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_2.jpg">
+						<source 
+								media="(min-width: 992px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_2.jpg">
+						<source 
+								media="(min-width: 569px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_mb_2.jpg">
+						<source 
+								media="(max-width: 567px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_mb_2.jpg">
+						<img width="1920" height="930" src="data/thumb/grande/100/469/097/themes/882205/assets/slider_2.jpg" alt="Slider 2" class="img-responsive" />
+					</picture>
+				</a>
+				<div class="content-slider">
+					<span class="title">&nbsp</span>
+					<span class="title">333Beer Restaurant</span>
+					<span class="content">Thực đơn phong phú</span>
+				</div>
+			</div>
+			<div class="swiper-slide animate__bounceIn">
+				<a class="clearfix" title="Slider 3">
+					<picture>
+						<source 
+								media="(min-width: 1200px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_3.jpg">
+						<source 
+								media="(min-width: 992px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_3.jpg">
+						<source 
+								media="(min-width: 569px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_mb_3.jpg">
+						<source 
+								media="(max-width: 567px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_mb_3.jpg">
+						<img width="1920" height="930" src="data/thumb/grande/100/469/097/themes/882205/assets/slider_3.jpg" alt="Slider 3" class="img-responsive" />
+					</picture>
+				</a>
+				<div class="content-slider">
+					<span class="title">&nbsp</span>
+					<span class="title">333Beer Restaurant</span>
+					<span class="content">Không gian rộng rãi</span>
+				</div>
+			</div>
+			<div class="swiper-slide animate__bounceIn">
+				<a class="clearfix" title="Slider 4">
+					<picture>
+						<source 
+								media="(min-width: 1200px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_4.jpg">
+						<source 
+								media="(min-width: 992px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_4.jpg">
+						<source 
+								media="(min-width: 569px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_mb_4.jpg">
+						<source 
+								media="(max-width: 567px)"
+								srcset="data/100/469/097/themes/882205/assets/slider_mb_4.jpg">
+						<img width="1920" height="930" src="data/thumb/grande/100/469/097/themes/882205/assets/slider_4.jpg" alt="Slider 2" class="img-responsive" />
+					</picture>
+				</a>
+				<div class="content-slider">
+					<span class="title">&nbsp</span>
+					<span class="title">333Beer Restaurant</span>
+					<span class="content">Nhân viên nhiệt tình</span>
+				</div>
+			</div>
+		</div>
+		
+  <!-- If we need pagination -->
+  <!-- <div class="swiper-pagination"></div> -->
+
+	</div>
+</section>
+<script>
+	var swiper = new Swiper('.home-slider', {
+		autoplay: {
+		   delay: 5000,
+		 },
+		pagination: {
+			el: '.home-slider .swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.home-slider .swiper-button-next',
+			prevEl: '.home-slider .swiper-button-prev',
+		},
+	});
+</script>
+
+<section class="section_about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-12">
+				<span class="title-smail">
+					Về chúng tôi
+				</span>
+				<span class="title">
+					333Beer Restaurant
+				</span>
+				<span class="content">
+					Nhà hàng chúng tôi luôn luôn đặt khách hàng lên hàng đầu, tận tâm phục vụ, mang lại cho khách hàng những trãi nghiệm tuyệt với nhất. Các món ăn với công thức độc quyền sẽ mang lại hương vị mới mẻ cho thực khách. 333Beer Restaurant xin chân thành cảm ơn.
+				</span>
+				<a class="xemthem" title="">
+					<div class="button-block">
+						<span class="button-line-left"></span>
+						<span class="button-text">Chủ cửa hàng: Phạm Thị Kiều Liên</span>
+						<span class="button-line-right"></span>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-6 col-12">
+				<div class="thump-image">
+					<a title="333Beer Restaurant">
+						<img width="680" height="460" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/about_image.png" title="Về chúng tôi">
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<section class="block-tab-product">
+	<div class="container">
+		<div class="e-tabs not-dqtab ajax-tab-1" data-section="ajax-tab-1" data-view="grid_4">
+			<div class="title-index clearfix">
+				<h2>Thực đơn của chúng tôi</h2>
+
+			</div>
+			<ul class="tabs tabs-title tab-desktop ajax clearfix">
+				<li class="tab-link has-content current" data-tab="tab-1" data-url="">
+					<span title="Bánh mì">Bánh mì</span>
+				</li>
+				<li class="tab-link has-content" data-tab="tab-2" data-url="">
+					<span title="Phở, bún">Phở, bún</span>
+				</li>
+				<li class="tab-link has-content" data-tab="tab-3" data-url="">
+					<span title="Các món ăn khác">Các món ăn khác</span>
+				</li>
+			</ul>
+			<div class="tab-1 tab-content current">
+				<div class="contentfill row">
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bánh mì thập cẩm">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu1-1.jpg" data-src="data/thumb/product/menu1-1.jpg" alt="Bánh mì thập cẩm" data-was-processed="true">
+								</a>
+								<div class="label_product">おすすめ</div>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bánh mì thập cẩm">Bánh mì thập cẩm</a></h3>
+								<div class="price-box">
+									<span class="price">780&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bánh mì heo quay">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu1-2.jpg" data-src="data/thumb/product/menu1-2.jpg" alt="Bánh mì heo quay" data-was-processed="true">
+								</a>
+								<div class="label_product">人気</div>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bánh mì heo quay">Bánh mì heo quay</a></h3>
+								<div class="price-box">
+									<span class="price">750&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bánh mì thịt nướng">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu1-3.jpg" data-src="data/thumb/product/menu1-3.jpg" alt="Bánh mì thịt nướng" data-was-processed="true">
+								</a>
+								<div class="label_product">人気</div>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bánh mì thịt nướng">Bánh mì thịt nướng</a></h3>
+								<div class="price-box">
+									<span class="price">750&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bánh mì  thịt bò">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu1-4.jpg" data-src="data/thumb/product/menu1-4.jpg" alt="Bánh mì  thịt bò" data-was-processed="true">
+								</a>
+								<div class="label_product">人気</div>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bánh mì  thịt bò">Bánh mì  thịt bò</a></h3>
+								<div class="price-box">
+									<span class="price">780&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Gà quay xé sợi">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu1-5.jpg" data-src="data/thumb/product/menu1-5.jpg" alt="Gà quay xé sợi" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Gà quay xé sợi">Gà quay xé sợi</a></h3>
+								<div class="price-box">
+									<span class="price">750&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bánh mì xá xíu">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu1-6.jpg" data-src="data/thumb/product/menu1-6.jpg" alt="Bánh mì xá xíu" data-was-processed="true">
+								</a>
+								<div class="label_product">人気</div>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bánh mì xá xíu">Bánh mì xá xíu</a></h3>
+								<div class="price-box">
+									<span class="price">750&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bánh mì chả lụa">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu1-7.jpg" data-src="data/thumb/product/menu1-7.jpg" alt="Bánh mì chả lụa" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bánh mì chả lụa">Bánh mì chả lụa</a></h3>
+								<div class="price-box">
+									<span class="price">750&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bánh mì chả cá">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu1-8.jpg" data-src="data/thumb/product/menu1-8.jpg" alt="Bánh mì chả cá" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bánh mì chả cá">Bánh mì chả cá</a></h3>
+								<div class="price-box">
+									<span class="price">750&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bánh mì trứng">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu1-9.jpg" data-src="data/thumb/product/menu1-9.jpg" alt="Bánh mì trứng" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bánh mì trứng">Bánh mì trứng</a></h3>
+								<div class="price-box">
+									<span class="price">750&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bánh mì bò kho">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu1-10.jpg" data-src="data/thumb/product/menu1-10.jpg" alt="Bánh mì bò kho" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bánh mì bò kho">Bánh mì bò kho</a></h3>
+								<div class="price-box">
+									<span class="price">980&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bánh mì cay">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu1-11.jpg" data-src="data/thumb/product/menu1-11.jpg" alt="Bánh mì cay" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bánh mì cay">Bánh mì cay</a></h3>
+								<div class="price-box">
+									<span class="price">850&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bánh mì không">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu1-12.jpg" data-src="data/thumb/product/menu1-12.jpg" alt="Bánh mì không" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bánh mì không">Bánh mì không</a></h3>
+								<div class="price-box">
+									<span class="price">Ăn tại quán: 250&#165;</span><br>
+									<span class="price">Mang về: 150&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="tab-2 tab-content">
+				<div class="contentfill row">
+				
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Phở bò">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu2-1.jpg" data-src="data/thumb/product/menu2-1.jpg" alt="Phở bò" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Phở bò">Phở bò</a></h3>
+								<div class="price-box">
+									<span class="price">小 950&#165;</span>
+									<span class="price">中 1100&#165;</span>
+									<span class="price">大 1500&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Phở gà">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu2-2.jpg" data-src="data/thumb/product/menu2-2.jpg" alt="Phở gà" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Phở gà">Phở gà</a></h3>
+								<div class="price-box">
+									<span class="price">小 950&#165;</span>
+									<span class="price">中 1100&#165;</span>
+									<span class="price">大 1500&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Phở bò kho">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu2-3.jpg" data-src="data/thumb/product/menu2-3.jpg" alt="Phở " data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Phở bò kho">Phở bò kho</a></h3>
+								<div class="price-box">
+									<span class="price">小 950&#165;</span>
+									<span class="price">中 1100&#165;</span>
+									<span class="price">大 1500&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bún ">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu2-4.jpg" data-src="data/thumb/product/menu2-4.jpg" alt="Bún " data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bún ">Bún bò Huế</a></h3>
+								<div class="price-box">
+									<span class="price">小 950&#165;</span>
+									<span class="price">中 1100&#165;</span>
+									<span class="price">大 1500&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bún ">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu2-5.jpg" data-src="data/thumb/product/menu2-5.jpg" alt="Bún " data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bún ">Bún thịt nướng</a></h3>
+								<div class="price-box">
+									<span class="price">小 950&#165;</span>
+									<span class="price">中 1100&#165;</span>
+									<span class="price">大 1500&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bún ">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu2-6.jpg" data-src="data/thumb/product/menu2-6.jpg" alt="Bún " data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bún ">Bún chả Hà Nội</a></h3>
+								<div class="price-box">
+									<span class="price">中 1200&#165;</span>
+									<span class="price">大 1500&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bún ">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu2-7.jpg" data-src="data/thumb/product/menu2-7.jpg" alt="Bún " data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bún ">Bún đậu mắm tôm</a></h3>
+								<div class="price-box">
+									<span class="price">中 1200&#165;</span>
+									<span class="price">大 1500&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bún ">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu2-8.jpg" data-src="data/thumb/product/menu2-8.jpg" alt="Bún " data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bún ">Bún gà</a></h3>
+								<div class="price-box">
+									<span class="price">小 950&#165;</span>
+									<span class="price">中 1100&#165;</span>
+									<span class="price">大 1500&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bún ">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu2-9.jpg" data-src="data/thumb/product/menu2-9.jpg" alt="Bún " data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bún ">Bún cá</a></h3>
+								<div class="price-box">
+									<span class="price">小 950&#165;</span>
+									<span class="price">中 1100&#165;</span>
+									<span class="price">大 1500&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " title="Bún ">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu2-10.jpg" data-src="data/thumb/product/menu2-10.jpg" alt="Bún " data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a class="line-clamp line-clamp-1" title="Bún ">Mì tôm úp bò</a></h3>
+								<div class="price-box">
+									<span class="price">980&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					
+				</div>
+			</div>
+			<div class="tab-3 tab-content">
+				<div class="contentfill row">
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb" target="_blank" href="data/thumb/product/menu3-1.jpg" title="">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu3-1.jpg" data-src="data/thumb/product/menu3-1.jpg" alt="" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a target="_blank" href="data/thumb/product/menu3-1.jpg" class="line-clamp line-clamp-1" title="">Mì tôm, cháo các loại</a></h3>
+								<div class="price-box">
+									<span class="price">950~1500&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb" target="_blank" href="data/thumb/product/menu3-2.jpg" title="">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu3-2.jpg" data-src="data/thumb/product/menu3-2.jpg" alt="" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a target="_blank" href="data/thumb/product/menu3-2.jpg" class="line-clamp line-clamp-1" title="">Cơm, xôi các loại</a></h3>
+								<div class="price-box">
+									<span class="price">900~1000&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " target="_blank" href="data/thumb/product/menu3-3.jpg" title="">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu3-3.jpg" data-src="data/thumb/product/menu3-3.jpg" alt="" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a target="_blank" href="data/thumb/product/menu3-3.jpg" class="line-clamp line-clamp-1" title="">Đồ ăn kèm nhậu</a></h3>
+								<div class="price-box">
+									<span class="price">380~800&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " target="_blank" href="data/thumb/product/menu3-4.jpg" title="">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu3-4.jpg" data-src="data/thumb/product/menu3-4.jpg" alt="" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a target="_blank" href="data/thumb/product/menu3-4.jpg" class="line-clamp line-clamp-1" title="">Gỏi các loại</a></h3>
+								<div class="price-box">
+									<span class="price">850~980&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " target="_blank" href="data/thumb/product/menu3-5.jpg" title="">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu3-5.jpg" data-src="data/thumb/product/menu3-5.jpg" alt="" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a target="_blank" href="data/thumb/product/menu3-5.jpg" class="line-clamp line-clamp-1" title="">Chả, giò, nem v.v</a></h3>
+								<div class="price-box">
+									<span class="price">500~850&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " target="_blank" href="data/thumb/product/menu3-6.jpg" title="">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu3-6.jpg" data-src="data/thumb/product/menu3-6.jpg" alt="" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a target="_blank" href="data/thumb/product/menu3-6.jpg" class="line-clamp line-clamp-1" title="">Lòng, các món xào</a></h3>
+								<div class="price-box">
+									<span class="price">950~1350&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " target="_blank" href="data/thumb/product/menu3-7.jpg" title="">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu3-7.jpg" data-src="data/thumb/product/menu3-7.jpg" alt="" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a target="_blank" href="data/thumb/product/menu3-7.jpg" class="line-clamp line-clamp-1" title="">Gà, vịt v.v</a></h3>
+								<div class="price-box">
+									<span class="price">599~2500&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " target="_blank" href="data/thumb/product/menu3-8.jpg" title="">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu3-8.jpg" data-src="data/thumb/product/menu3-8.jpg" alt="" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a target="_blank" href="data/thumb/product/menu3-8.jpg" class="line-clamp line-clamp-1" title="">Thịt dê, ếch v.v</a></h3>
+								<div class="price-box">
+									<span class="price">950~1380&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xl-20">
+						<form class="variants product-action product-action-grid">
+							<div class="product-thumbnail">
+								<a class="image_thumb " target="_blank" href="data/thumb/product/menu3-9.jpg" title="">
+									<img width="400" height="400" class="lazyload loaded" src="data/thumb/product/menu3-9.jpg" data-src="data/thumb/product/menu3-9.jpg" alt="" data-was-processed="true">
+								</a>
+							</div>
+							<div class="product-info">
+								<h3 class="product-name "><a target="_blank" href="data/thumb/product/menu3-9.jpg" class="line-clamp line-clamp-1" title="">Các món lẩu</a></h3>
+								<div class="price-box">
+									<span class="price">3000~5999&#165;</span>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="section_banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-sm-5 col-9 banner">			
+				<img width="400" height="500" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/cate_1.jpg" alt="banner">
+				<div class="content">
+					<a title="banner">
+						<span class="title1">333Beer Restaurant</span>
+						<span class="title2">Món ăn đa dạng</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-5 col-9 banner">		
+				<img width="400" height="500" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/cate_2.jpg" alt="Banner">
+				<div class="content">
+					<a title="Banner">
+						<span class="title1">333Beer Restaurant</span>
+						<span class="title2">Hương vị đặc biệt</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-5 col-9 banner">		
+				<img width="400" height="500" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/cate_3.jpg" alt="Banner">
+				<div class="content">
+					<a title="Banner">
+						<span class="title1">333Beer Restaurant</span>
+						<span class="title2">Công thức độc quyền</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-5 col-9 banner">	
+				<img width="400" height="500" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/cate_5.jpg" alt="">
+				<div class="content">
+					<a title="">
+						<span class="title1">333Beer Restaurant</span>
+						<span class="title2">Đảm bảo chất lượng</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<!-- <section class="section_num"> -->
+<section class="section_num">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6 col-6">
+				<!-- <img width="64" height="64" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/thong_ke1.png" alt="Cửa hàng"> -->
+				<!-- <div class="content"> -->
+					<!-- <span class="num "><span class="counter">8</span>+</span> -->
+					<!-- <span class="title">Cửa hàng</span> -->
+				<!-- </div> -->
+			</div>
+			<div class="col-lg-3 col-sm-6 col-6 item">
+				<!-- <img width="64" height="64" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/thong_ke2.png" alt="Nhân viên"> -->
+
+				<!-- <div class="content"> -->
+					<!-- <span class="num "><span class="counter">200</span>+</span> -->
+					<!-- <span class="title">Nhân viên</span> -->
+				<!-- </div> -->
+				<img width="64" height="64" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/thong_ke3.png" alt="Khách hàng">
+				<div class="content">
+					<span class="num "><span class="counter">6000</span>+</span>
+					<span class="title">Khách hàng</span>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-6 item">
+				<img width="64" height="64" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/thong_ke4.png" alt="Món ăn">
+				<div class="content">
+					<span class="num "><span class="counter">90</span>+</span>
+					<span class="title">Món ăn</span>
+				</div>
+			</div>
+			<!-- <div class="col-lg-3 col-sm-6 col-6 item"> -->
+				<!-- <img width="64" height="64" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/thong_ke4.png" alt="Món ăn"> -->
+				<!-- <div class="content"> -->
+					<!-- <span class="num "><span class="counter">50</span>+</span> -->
+					<!-- <span class="title">Món ăn</span> -->
+				<!-- </div> -->
+			<!-- </div> -->
+		</div>
+	</div>
+</section>
+
+
+<section class="section_danhgia">
+	<div class="container">
+		<div class="background"></div>
+		<div class="row">
+			<div class="col-xl-6 col-lg-7">
+				<div class="danhgia-slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="item">
+								<div class="info">
+									<div class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M96 96C42.98 96 0 138.1 0 192s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192C192 138.1 149 96 96 96zM448 192c0-53.02-42.98-96-96-96s-96 42.98-96 96s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192z"/></svg>
+									</div>
+									<div class="avatar">
+										<img width="80" height="80" alt="海のしじみ" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/danhgia_1.jpg">
+										<div class="testimonial">
+											<h5>
+												海のしじみ
+											</h5>
+											<span>Khách hàng người Nhật</span>
+										</div>
+									</div>
+									
+								</div>
+								<div class="content">
+									<p>
+										Tôi đã có cháo hải sản.
+										Đặt mực, tôm, hành tây xào lên trên, trên cùng là rau mùi và hành lá xắt nhỏ.
+										Cả mực và tôm đều đầy đặn và rất ngon.
+										Tôi cảm thấy như được sưởi ấm từ tận sâu trong cơ thể.
+									</p>
+									<p>
+									Đồ ăn: 5 / 
+									Dịch vụ: 4 / 
+									Bầu không khí: 3
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="item">
+								<div class="info">
+									<div class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M96 96C42.98 96 0 138.1 0 192s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192C192 138.1 149 96 96 96zM448 192c0-53.02-42.98-96-96-96s-96 42.98-96 96s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192z"/></svg>
+									</div>
+									<div class="avatar">
+										<img width="80" height="80" alt="和田有未" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/danhgia_2.jpg">
+										<div class="testimonial">
+											<h5>
+												和田有未
+											</h5>
+											<span>Khách hàng người Nhật</span>
+										</div>
+									</div>
+									
+								</div>
+								<div class="content">
+									<p>
+										4 loại bánh mì, chả Việt, cay, thịt heo quay và thập cẩm. Tôi thấy một số người Việt Nam ăn phở ngon bên trong và gọi món phở bò. Ăn kèm với tỏi ngâm, tương ớt, v.v. cho vừa miệng. Nhiều rau và nhiều thịt. Chiếc bánh mì cỡ nửa và đồ uống yêu thích của bạn có giá 899 yên. Tôi cảm thấy giống Huế.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="item">
+								<div class="info">
+									<div class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M96 96C42.98 96 0 138.1 0 192s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192C192 138.1 149 96 96 96zM448 192c0-53.02-42.98-96-96-96s-96 42.98-96 96s42.98 96 96 96c11.28 0 21.95-2.305 32-5.879V288c0 35.3-28.7 64-64 64c-17.67 0-32 14.33-32 32s14.33 32 32 32c70.58 0 128-57.42 128-128V192z"/></svg>
+									</div>
+									<div class="avatar">
+										<img width="80" height="80" alt="Huyền Nguyễn" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/danhgia_3.jpg">
+										<div class="testimonial">
+											<h5>
+												Huyền Nguyễn
+											</h5>
+											<span>Khách hàng người Việt</span>
+										</div>
+									</div>
+									
+								</div>
+								<div class="content">
+									<p>
+										Tôi đưa anh ấy đến gặp một người bạn Nhật Bản. Tôi đã ăn trưa và nó rất ngon. Món ăn được khuyên dùng là bánh mì trộn và phở bò. Dừa cũng ngon.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+	var swiper = new Swiper('.danhgia-slider', {
+		autoplay: false,
+		pagination: {
+			el: '.danhgia-slider .swiper-pagination',
+			clickable: true,
+		}
+	});
+</script>
+
+<footer class="footer">
+	<div class="mid-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-5 link-list col-footer ft-info">
+					<div class="logo">
+						<a href="index.html" title="Logo">	
+							<img width="172" height="50" src="data/100/469/097/themes/882205/assets/logo333.png" alt="333Beer Restaurant">
+						</a>
+					</div>
+				
+					<div class="ft-description">
+						Nhà hàng chúng tôi luôn luôn đặt khách hàng lên hàng đầu, tận tâm phục vụ, mang lại cho khách hàng những trãi nghiệm tuyệt với nhất. Các món ăn với công thức độc quyền sẽ mang lại hương vị mới mẻ cho thực khách. 333Beer Restaurant xin chân thành cảm ơn.
+					</div>
+					<div class="group-address">
+						<div class="title">
+							Cửa hàng chính
+						</div>
+						<ul>
+							<li><b>Địa chỉ: </b><span>
+								
+								〒733-0011
+Hiroshima ,Nishi Ward, Yokogawacho, 2 Chome−2−21 小谷ビル 101<br>
+広島県広島市西区横川町2丁目2ー21　小谷ビル１０１
+								
+								</span></li>
+							<li>
+								<b>Điện thoại: </b><a title="0822084699" href="tel:0822084699">0822084699</a>
+							</li>
+							<li>
+								<b>Facebook: </b><a  title="333Beer" target="_blank" href="https://www.facebook.com/profile.php?id=100091632720734">333Beer</a>
+							</li>
+						</ul>
+						
+						<a class="see-store" target="_blank" href="https://maps.app.goo.gl/ornRYzCpCiLEQpY78" title="Bản đồ">Xem bản đồ</a>
+					</div>
+					
+					
+				</div>
+				<div class="col-6 col-md-4 col-lg-2 link-list col-footer">
+					<!-- <h4 class="title-menu"> -->
+						<!-- Hướng dẫn -->
+						<!-- <span class="Collapsible__Plus"></span> -->
+					<!-- </h4> -->
+					<!-- <ul class="list-menu hidden-mobile"> -->
+						
+						<!-- <li><a href="huong-dan-mua-hang.html" title="Hướng dẫn mua hàng">Hướng dẫn mua hàng</a></li> -->
+						
+						<!-- <li><a href="huong-dan-thanh-toan.html" title="Hướng dẫn thanh toán">Hướng dẫn thanh toán</a></li> -->
+						
+						<!-- <li><a href="account/register.html" title="Đăng ký thành viên">Đăng ký thành viên</a></li> -->
+						
+						<!-- <li><a href="lien-he.html" title="Hỗ trợ khách hàng">Hỗ trợ khách hàng</a></li> -->
+						
+					<!-- </ul> -->
+				</div>
+				<div class="col-6 col-md-4 col-lg-2 link-list col-footer">
+					<h4 class="title-menu">
+						Mạng xã hội
+					</h4>
+					<ul class="social">
+
+						<li><a title="Zalo"><img width="32" height="32" title="Zalo" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/zalo.svg"></a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=100091632720734" target="_blank" title="Facebook"><img width="32" height="32" title="Facebook" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/facebook.svg"></a></li>
+						<!-- <li><a title="Youtube"><img width="32" height="32" title="Youtube" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"  data-src="data/100/469/097/themes/882205/assets/youtube.svg"></a></li> -->
+
+					</ul>
+					<!-- <h4 class="title-menu"> -->
+						<!-- Chính sách -->
+						<!-- <span class="Collapsible__Plus"></span> -->
+					<!-- </h4> -->
+					<!-- <ul class="list-menu hidden-mobile"> -->
+						
+						<!-- <li><a href="chinh-sach-thanh-vien.html" title="Chính sách thành viên">Chính sách thành viên</a></li> -->
+						
+						<!-- <li><a href="chinh-sach-thanh-toan.html" title="Chính sách thanh toán">Chính sách thanh toán</a></li> -->
+						
+						<!-- <li><a href="huong-dan-mua-hang.html" title="Hướng dẫn mua hàng">Hướng dẫn mua hàng</a></li> -->
+						
+						<!-- <li><a href="bao-mat-thong-tin-ca-nhan.html" title="Bảo mật thông tin cá nhân">Bảo mật thông tin cá nhân</a></li> -->
+						
+						<!-- <li><a href="qua-tang-tri-an.html" title="Quà tặng tri ân">Quà tặng tri ân</a></li> -->
+						
+					<!-- </ul> -->
+				</div>
+				<div class="col-12 col-md-4 col-lg-3 link-list col-footer">
+					<h4 class="title-menu">
+						Hình thức thanh toán
+					</h4>
+					<ul class="thanhtoan">
+
+						<li><img width="57" height="35" alt="Payment 4" data-src="data/100/469/097/themes/882205/assets/payment_4.png" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"></li>
+						<li><img width="57" height="35" alt="Payment 1" data-src="data/100/469/097/themes/882205/assets/payment_1.png" class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"></li>
+
+					</ul>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="copyright" class="copyright">
+		<div class="container">
+			<span class="copy-right">Bản quyền thuộc về <b>333 Beer</b>.</span>
+		</div>
+	</div>
+</footer>
+
+<a  class="backtop"  title="Lên đầu trang">
+	<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="angle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-angle-up fa-w-10"><path fill="currentColor" d="M168.5 164.2l148 146.8c4.7 4.7 4.7 12.3 0 17l-19.8 19.8c-4.7 4.7-12.3 4.7-17 0L160 229.3 40.3 347.8c-4.7 4.7-12.3 4.7-17 0L3.5 328c-4.7-4.7-4.7-12.3 0-17l148-146.8c4.7-4.7 12.3-4.7 17 0z" class=""></path></svg>
+</a>
+		</div>
+<link rel="preload" as="style" href="data/100/469/097/themes/882205/assets/ajaxcart.scssbce7.css"  type="text/css">
+<link href="data/100/469/097/themes/882205/assets/ajaxcart.scssbce7.css" rel="stylesheet" type="text/css" media="all" />
+<div class="backdrop__body-backdrop___1rvky"></div>
+
+<script src="data/100/469/097/themes/882205/assets/quickviewbce7.js" type="text/javascript"></script>
+<link rel="preload" as="script" href="data/100/469/097/themes/882205/assets/mainbce7.js" />
+<script src="data/100/469/097/themes/882205/assets/mainbce7.js" type="text/javascript"></script>
+<script src="data/100/469/097/themes/882205/assets/indexbce7.js" type="text/javascript"></script>
+
+
+<div class="popup-ngonngu">
+	<div class="icon">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+			<path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+		</svg>
+	</div>
+	<ul class="language">
+		<li>
+			<a href="#"><img src="data/100/496/044/themes/927290/assets/vn1765.png?1699256128806" alt="Tiếng Việt">
+				<span>Tiếng Việt</span>
+			</a>
+		</li>
+		<li>
+			<a href="#"><img src="data/100/496/044/themes/927290/assets/jp1765.png?1699256128806" alt="日本語">
+				<span>日本語</span>
+			</a>
+		</li>
+	</ul>
+</div>
+
+		
+		
+		
+		<a target="_blank" class="livechat-mes" href="https://m.me/100091632720734">
+			<img src="data/100/469/097/themes/882205/assets/messenger.svg?1705567372895" alt="Messenger">
+		</a>
+		
+		
+	</body>
+<!-- Mirrored from dola-restaurant.mysapo.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Feb 2025 14:11:44 GMT -->
+</html>
